@@ -19,6 +19,6 @@ public class Task_2_countDigits {
         return count;
     }
     public static int countDigitsRecursive(int n) {
-        return n == 0 ? 0 : 1 + countDigitsRecursive(n / 10);
+        return n == 0 ? 1 : 1 + countDigitsRecursive(n / 10);
     }
 }

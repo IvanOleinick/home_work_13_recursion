@@ -26,10 +26,10 @@ public class Task_4_Palindrome {
 
     public static boolean isPalindromeRecursive(int num) {
         if (num < 0) return false;
-        return num == reverseRecursive(num, 0);
+        return num == reverseRecursive(num, 0L);
     }
 
-    private static int reverseRecursive(int num, int reversed) {
+    private static long reverseRecursive(int num, long reversed) {
         if (num == 0) {
             return reversed;
         }

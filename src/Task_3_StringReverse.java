@@ -23,6 +23,7 @@ public class Task_3_StringReverse {
     }
 
     public static String reverseRecursive(String s){
+        if (s == null) return s;
 
         return s.isEmpty()?s:reverseRecursive(s.substring(1))+s.charAt(0);
     }
